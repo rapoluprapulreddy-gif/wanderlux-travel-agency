@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment Request - WanderLux Travel Agency</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">WanderLux</div>
+      <button class="nav-toggle" aria-label="Toggle Navigation Menu">&#9776;</button>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="calculator.html">Trip Calculator</a></li>
+        <li><a href="appointment.html" class="active" aria-current="page">Appointment</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content-section" style="max-width: 600px;">
+    <h1>Book an Appointment</h1>
+    <p>Schedule a personal consultation with one of our expert travel consultants.</p>
+
+    <form id="appointmentForm" class="contact-form" style="margin-top: 1.5rem;">
+      <div class="form-group">
+        <label for="apptName">Full Name:</label>
+        <input type="text" id="apptName" required>
+      </div>
+      <div class="form-group">
+        <label for="apptEmail">Email Address:</label>
+        <input type="email" id="apptEmail" required>
+      </div>
+      <div class="form-group">
+        <label for="apptPhone">Phone Number:</label>
+        <input type="tel" id="apptPhone" required>
+      </div>
+      <div class="form-group">
+        <label for="apptDate">Preferred Date:</label>
+        <input type="date" id="apptDate" required>
+      </div>
+      <div class="form-group">
+        <label for="apptMessage">Message / Travel Notes:</label>
+        <textarea id="apptMessage" rows="4"></textarea>
+      </div>
+      <button type="submit" class="btn">Submit Request</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 WanderLux Travel Agency. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
